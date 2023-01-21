@@ -4,11 +4,14 @@ namespace DesafioPOO.Models
     public class Nokia : Smartphone
     {
 
-        public Nokia(string modelo) : base(modelo)
-        
-         public override void InstalarAplicativo(string nomeApp);
+        public Nokia(string numero, string modelo, string imei, int memoria) : base(modelo, numero, imei, memoria)
+        {
+            
+        }
+
+    public override void InstalarAplicativo(string nomeApp);
          {
-            Console.WriteLine("Instalando whatsapp");
+           Console.WriteLine($"instalando aplicativo{nomeApp}");
          }
          
         // TODO: Sobrescrever o método "InstalarAplicativo"
